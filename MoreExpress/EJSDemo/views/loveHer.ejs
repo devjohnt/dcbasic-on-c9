@@ -1,0 +1,11 @@
+<% include partials/header %>
+<h1>I love <%= herName.toUpperCase() %>!</h1>
+
+<%  if(herName === "ekin"){ %>
+    <h2>Good Choice, Ekin is adorable!</h2>
+<%  } else if(herName === "simin") { %>
+    <h2>Even better: Worship <strong><%= herName.toUpperCase() %>!</strong></h2>
+<%  } else { %>
+    <h2><em>All you need is <strong>LOVE!</strong></em></h2>
+<% } %> 
+<% include partials/footer %>

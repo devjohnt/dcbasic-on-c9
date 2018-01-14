@@ -1,0 +1,14 @@
+<h1>Hello to results.ejs</h1>
+
+<% data["Search"].forEach(function(movie){ %>
+<p>-------------Daris-Calinor-------------</p>
+<img src="<%= movie["Poster"] %>">
+<li><strong>Title: <%= movie["Title"] %></strong></li>
+<li>Year: <%= movie["Year"] %></li>
+<li>IMDB Link: <a href="http://www.imdb.com/title/<%= movie["imdbID"] %>/">Click Here!</a></li>
+<li>Type: <%= movie["Type"] %></li>
+<p>-------------Daris-Calinor-------------</p>
+<br>
+<% }); %>
+
+<a href="/">Search Again!</a>
